@@ -1,5 +1,6 @@
 import "./App.css";
-import CounterExample from "./components/CounterExample";
+// import CounterExample from "./components/CounterExample";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HelloWorld from "./components/HelloWorld";
 
@@ -8,7 +9,8 @@ function App() {
     <div>
       <Header />
       <HelloWorld name={"Danish"} />
-      <CounterExample />
+      {/* <CounterExample /> */}
+      <Footer />
     </div>
   );
 }
