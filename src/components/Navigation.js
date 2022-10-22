@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import NavigationMenu from "./NavigationMenu";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -16,7 +17,7 @@ const Navigation = () => {
             onClick={() => setShowMenu(false)}
           ></div>
           <div className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow">
-            Menu Items
+            <NavigationMenu closeMenu={() => setShowMenu(false)} />
           </div>
         </>
       )}
